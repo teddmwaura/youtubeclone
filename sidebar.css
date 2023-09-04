@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.services p{
+  font-family: roboto;
+  font-size: 18px;
+  font-style: italic;
+  white-space: nowrap;
+  
+}
+.video-nav{
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background-color: #fff;
+  width: 10%;
+  bottom: 0;
+  border-right: 1px solid #efefef;
+
+}
+body{
+  padding-left: 9rem;
+}
+.services{
+  height: 5rem;
+  width: 6rem;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+.services img{
+  height: 35px;
+}
+.testimonials{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.set-time{
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+.information{
+  position: relative;
+  text-align: center;
+}
+.img{
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.75rem;
+  top: -5px;
+  background-color: rgb(209, 26, 26);
+  color: white;
+  font-size: 18px;
+  right: -2px;
+}
+.home{
+  background: gray;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  position: absolute;
+  bottom: -25px;
+  font-size: 14px;
+  left: 0;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: 1s;
+  white-space: nowrap;
+}
+.info:hover .home{
+opacity: 1;
+}
+.information{
+  position: relative;
+}
+.information:hover .home{
+  opacity: 1;
+}
+.services:hover{
+  background-color: #efefef;
+}
+@media screen and (max-width: 770px){
+
+  .video-nav{
+  position: fixed;
+  top: 12rem;
+  left: 30px;
+  background-color: #fff;
+  width: 15%;
+  bottom: 0;
+  border-right: none;
+
+}
+.services{
+  height: 4.5rem;
+  width: 5.5rem;
+  margin-bottom: 4px;
+}
+.services img{
+  height: 25px;
+}
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+}
